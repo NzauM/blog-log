@@ -1,0 +1,5 @@
+<!-- <p>search works!</p> -->
+<form (ngSubmit)="serach()">
+    <input type="search" [(ngModel)]="repoSearch" name="search" placeholder ="Enter the name of repo to search">
+    <button (keyup)="search()" type="submit">Search</button>
+</form>

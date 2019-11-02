@@ -1,2 +1,7 @@
 <!-- <p>git works!</p> -->
-
+<app-search-form (searchWord)="search($event)"></app-search-form>
+<div ngIf="!inputText">
+<img src=" {{info.avatar_url}} " alt="profile pic">
+<h3> {{info.name}} </h3>
+<p> {{info.repos}} </p>
+</div>

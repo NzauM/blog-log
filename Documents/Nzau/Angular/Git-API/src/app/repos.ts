@@ -1,5 +1,7 @@
 export class Repos {
-    public repocount:number;
-    public contrinutors:any;
-    public repodisplay:any;
+    constructor(public name:string,public html_url:string,
+        public description:string,public creationDate:Date,
+        ){
+
+    }
 }

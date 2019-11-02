@@ -7,7 +7,8 @@ import { NotFoundComponent } from './not-found/not-found.component'
 
 
 const routes: Routes = [
-  {"path":"home","component":GitComponent},
+  {"path":"user","component":GitComponent},
+  {path:"repos",component:GitComponent},
   {"pathMatch":"full","redirectTo":"home","path":""},
   {"path":"**","component":NotFoundComponent}
 ];
