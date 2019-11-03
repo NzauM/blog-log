@@ -8,10 +8,10 @@ import { RepoServiceService } from '../repo-service.service';
   styleUrls: ['./user-repos.component.css']
 })
 export class UserReposComponent implements OnInit {
-  myRepo:Repo[];
+  myRepo: Repo[];
 
-
-  constructor(public reposerv: RepoServiceService ) { }
+  constructor(public reposerv: RepoServiceService) {
+  }
 
   getRepo(searchTerm: string) {
     this.reposerv.getRepo(searchTerm).subscribe(data => {
@@ -23,5 +23,4 @@ export class UserReposComponent implements OnInit {
   ngOnInit() {
     this.getRepo('NzauM');
   }
-
 }

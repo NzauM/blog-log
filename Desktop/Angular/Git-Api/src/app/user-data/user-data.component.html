@@ -12,6 +12,9 @@
                     <div class="card-profile-image">
                       <a href="#">
                         <img src="{{u.avatar_url}}" class="rounded-circle">
+                        <a href="{{u.html_url}} " target="_blank">
+                        <h3 class="user">{{u.login}}</h3>
+                        </a>
                       </a>
                     </div>
                   </div>
@@ -20,6 +23,7 @@
                   <div class="d-flex justify-content-between">
                     <a href="#" class="btn btn-sm btn-info mr-4">Follow</a>
                     <a href="../user-repos" class="btn btn-sm btn-info mr-4">View Repos</a>
+                    <!-- <a href="{{repo.html_url}}" target="_blank" >{{repo.name}}</a> -->
                     <!-- <button routerLink="user-repos">Search Repos</button> -->
                   </div>
                 </div>
@@ -27,16 +31,16 @@
                   <div class="row">
                     <div class="col">
                       <div class="card-profile-stats d-flex justify-content-center mt-md-5">
-                        <div>
-                          <span class="heading">{{u.followers}}</span>
+                        <div class="spacing">
+                          <span class="heading">{{u.followers}}</span><br>
                           <span class="description">Following</span>
                         </div>
-                        <div>
-                          <span class="heading">{{u.following}}</span>
+                        <div class="spacing">
+                          <span class="heading">{{u.following}}</span><br>
                           <span class="description">Followers</span>
                         </div>
-                        <div>
-                          <span class="heading">{{u.public_repos}}</span>
+                        <div class="spacing">
+                          <span class="heading">{{u.public_repos}}</span><br>
                           <span class="description">Repos</span>
                         </div>
                       </div>
