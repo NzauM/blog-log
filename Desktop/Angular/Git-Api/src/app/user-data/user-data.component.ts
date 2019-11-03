@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// import { from } from 'rxjs';
+import { UserViceService } from '../user-vice.service';
+import { GitUser } from '../git-user';
+
 
 
 @Component({
@@ -8,10 +10,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-data.component.css']
 })
 export class UserDataComponent implements OnInit {
+  user:GitUser[];
+  particleJS:any;
 
-  constructor() { }
+  constructor(private service:UserViceService) { }
 
-  ngOnInit() {
+  getSearchedUser(searchTerm) {
+    this.service.searchMyUser(searchTerm).then(
+      (success) => {
+        this.user = this.service.user;
+        console.log(this.user);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   }
 
-}
+  ngOnInit() {
+    this.getSearchedUser('NzauM');
+    // tslint:disable-next-line:prefer-const
+    let particlesJS;
+    particlesJS.load('particles-js', 'particles.json', null);
+  }
+  }
+
+
