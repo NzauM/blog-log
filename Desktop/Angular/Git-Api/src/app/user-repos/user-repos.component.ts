@@ -9,10 +9,11 @@ import { RepoServiceService } from '../repo-service.service';
 })
 export class UserReposComponent implements OnInit {
   myRepo: Repo[];
+  // userRepo:Repo[];
 
   constructor(public reposerv: RepoServiceService) {
   }
-
+ 
   getRepo(searchTerm: string) {
     this.reposerv.getRepo(searchTerm).subscribe(data => {
       this.myRepo = data;
@@ -20,7 +21,15 @@ export class UserReposComponent implements OnInit {
     });
   }
 
+  // initialRepo(owner:string){
+  //   this.reposerv.getRepo(owner).subscribe(data => {
+  //     this.userRepo = data;
+  //     console.log(this.userRepo);
+  //   })
+  // }
   ngOnInit() {
+    //  let repoSearch = {{u.html_url}}
     this.getRepo('NzauM');
+    // this.initialRepo;
   }
 }
