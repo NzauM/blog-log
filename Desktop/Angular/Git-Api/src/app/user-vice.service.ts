@@ -31,6 +31,7 @@ export class UserViceService {
       this.user = [];
       this.http.get<data>(this._URL + searchTerm + this.token).toPromise().then(
         (results) => {
+          // @ts-ignore
           this.user.push(results);
           resolve();
         },
