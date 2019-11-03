@@ -1,5 +1,5 @@
 <div class="overlay">
-    <h2 class="mb-5 text-center gsearch">G - Search</h2>
+    <h2 class="mb-5 text-center gsearch">git~ty</h2>
     <app-search-user (searchEmmiter)="getSearchedUser($event)"></app-search-user>
     <div *ngFor="let u of user">
       <div class="main-content container">
@@ -19,6 +19,8 @@
                 <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                   <div class="d-flex justify-content-between">
                     <a href="#" class="btn btn-sm btn-info mr-4">Follow</a>
+                    <a href="../user-repos" class="btn btn-sm btn-info mr-4">View Repos</a>
+                    <!-- <button routerLink="user-repos">Search Repos</button> -->
                   </div>
                 </div>
                 <div class="card-body pt-0 pt-md-4">

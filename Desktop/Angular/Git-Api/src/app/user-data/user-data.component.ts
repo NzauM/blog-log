@@ -11,7 +11,7 @@ import { GitUser } from '../git-user';
 })
 export class UserDataComponent implements OnInit {
   user:GitUser[];
-  particleJS:any;
+  // particleJS:any;
 
   constructor(private service:UserViceService) { }
 
@@ -30,8 +30,8 @@ export class UserDataComponent implements OnInit {
   ngOnInit() {
     this.getSearchedUser('NzauM');
     // tslint:disable-next-line:prefer-const
-    let particlesJS;
-    particlesJS.load('particles-js', 'particles.json', null);
+    // let particlesJS;
+    // particlesJS.load('particles-js', 'particles.json', null);
   }
   }
 

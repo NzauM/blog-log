@@ -11,7 +11,7 @@ import { from } from 'rxjs';
 export class UserViceService {
   user: GitUser[] = [];
   _URL = 'https://api.github.com/users/';
-  token = '?access_token= acbea5f3a8ae30bfa3fc9d75a344bc77d38a0453';
+  token = '?access_token=14f4c00a07dd03e8b057a4011e8e88e6d77b4b29';
 
   constructor(private http:HttpClient) { 
 
@@ -32,6 +32,7 @@ export class UserViceService {
       this.http.get<data>(this._URL + searchTerm + this.token).toPromise().then(
         (results) => {
           // @ts-ignore
+
           this.user.push(results);
           resolve();
         },
