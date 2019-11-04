@@ -1,4 +1,4 @@
-# Qu
+# Git -API
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
@@ -8,17 +8,19 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Description
 
-quote notes is an application that lets you view and add quotes. you can also vote on your favorite quote.
+Gitty is an application that consumes the github API to show users and their repos.One can search a or simply any repository to see various github repositories.
 
 
 ## Behaviour  Driven Development
+
 User Requirements
 -As a user I would like to:
 
--Create a new quote.
--Upvote or downvote a quote.
--Delete a quote
--See the number of upvotes and number of downvotes for each quote.
+-see the owners github profile on the landing page
+-see the owners github repositories.
+-search a github user.
+-search a github repo.
+
 
 ## Technologies Used
 
@@ -32,8 +34,9 @@ This applcation uses;
 ## Support and contact details
 
 For any issues or contributions,please feel free to contact me on:<br>
-https://github.com/NzauM/quote-notes./issues for any issues or bug reports.<br>
-https://github.com/NzauM/quote-notes./pulls for any contributions or pull requests.
+https://github.com/NzauM/Github-API/issues for any issues or bug reports.<br>
+https://github.com/NzauM/Github-API./pulls for any contributions or pull requests.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
