@@ -10,7 +10,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Gitty is an application that consumes the github API to show users and their repos.One can search a or simply any repository to see various github repositories.
 
-
 ## Behaviour  Driven Development
 
 User Requirements
@@ -20,7 +19,6 @@ User Requirements
 -see the owners github repositories.
 -search a github user.
 -search a github repo.
-
 
 ## Technologies Used
 
@@ -33,9 +31,9 @@ This applcation uses;
 
 ## Support and contact details
 
-For any issues or contributions,please feel free to contact me on:<br>
-https://github.com/NzauM/Github-API/issues for any issues or bug reports.<br>
-https://github.com/NzauM/Github-API./pulls for any contributions or pull requests.
+For any issues or contributions,please feel free to contact me on:
+<<https://github.com/NzauM/Github-API/issues> for any issues or bug reports.
+<https://github.com/NzauM/Github-API./pulls> for any contributions or pull requests.
 
 ## Running unit tests
 
