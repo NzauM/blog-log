@@ -8,9 +8,9 @@ import { UserReposComponent } from './user-repos/user-repos.component';
 
 
 const routes: Routes = [
-  {path: 'user-list', component: UserDataComponent},
+  {path: 'user-data', component: UserDataComponent},
   {path: 'user-repos', component: UserReposComponent},
-  {path: '', redirectTo: '/user-list', pathMatch: 'full'},
+  {path: '', redirectTo: '/user-data', pathMatch: 'full'},
   {path: '**', component : NotFoundComponent}
 ];
 

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  APIKEY:'103de3d841ec0e8ee116afd956ec2819922b7019'
+  ApiKey:"18538e65840c701357470f29c5e08a2f443151a65"
   // apiurl:'https://api.github.com/users/NzauM?access_token=103de3d841ec0e8ee116afd956ec2819922b7019'
 };
 
