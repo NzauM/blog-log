@@ -7,7 +7,7 @@ class TestUsers(unittest.TestCase):
 
     The unittest.TestCase helps in creating new test cases.
     '''
-    def setup(self):
+    def setUp(self):
         '''
         This method will run before each class
         '''
@@ -19,7 +19,20 @@ class TestUsers(unittest.TestCase):
         To check if the user object is instantiated ocrrectly 
         '''
 
-        
+        self.assertEqual(self.new_user.user_name,"Merciee")
+        self.assertEqual(self.new_user.first_name,"Mercy")
+        self.assertEqual(self.new_user.last_name,"Nzau")
+        self.assertEqual(self.new_user.birth_month,"October")
+        self.assertEqual(self.new_user.password,"Mercy10")
+
+    def test_save_users(self):
+        '''
+        Test case to test if the user objects are saved 
+        '''
+        self.new_user.save_users()
+        self.assertEqual(len(Users.users_list),1)
+
+
 
 if __name__ == '__main__':
     unittest.main()

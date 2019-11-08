@@ -3,7 +3,12 @@ class Users:
     Class that generates new instances of users
     '''
     users_list = []
-    # new_user =("Merciee","Mercy","Nzau","October","Mercy10")
+    
+    def save_users(self):
+        '''
+        This method will save all users to the user list
+        '''
+        Users.users_list.append(self)
 
 
 
