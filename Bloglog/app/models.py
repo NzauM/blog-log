@@ -1,6 +1,7 @@
-from app import db
 from . import db
 from werkzeug.security import generate_password_hash,check_password_hash
+from flask_login import UserMixin
+from . import login_manager
 
 class Quote:
     '''
@@ -12,15 +13,16 @@ class Quote:
         self.quote = quote
         self.author = author
 
-class Users(db.Model):
+class Users(UserMixin,db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer,primary_key = True)
-    username = db.Column(db.String)
+    username = db.Column(db.String(255),index = True)
+    email = db.Column(db.String,unique = True)
     pass_secure =db.Column(db.String)
 
 
     @property
-    def pasword(self):
+    def password(self):
         raise AttributeError('Password attribute cannot be read')
 
     @password.setter
@@ -33,3 +35,7 @@ class Users(db.Model):
 
     def __repr__(self):
         return f'User {self.username}'
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))

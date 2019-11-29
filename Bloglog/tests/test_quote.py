@@ -12,7 +12,7 @@ class QuoteTest(unittest.TestCase):
         '''
         The setup method will run befor every test
         '''
-        self.new_quote = Quote(12'Every day the sun rises','Mercy Nzau')
+        self.new_quote = Quotes(12, 'Every day the sun rises' ,'Mercy Nzau')
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_quote,Quote))

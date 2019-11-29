@@ -3,7 +3,7 @@ from flask_bootstrap import Bootstrap
 from config import Config_options
 from config import DevConfig
 from flask_sqlalchemy import SQLAlchemy
-from flask-login import LoginManager
+from flask_login import LoginManager
 
 
 
