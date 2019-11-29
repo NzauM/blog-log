@@ -39,3 +39,13 @@ class Users(UserMixin,db.Model):
     @login_manager.user_loader
     def load_user(user_id):
         return Users.query.get(int(user_id))
+
+
+class Blogs(db.Model):
+    __tablename__ = 'blogs'
+    id = db.Column(db.Integer,primary_key = True)
+    title = db.Column(db.String(255))
+    blog = db.Column(db.String)
+    author = db.Column(db.String)
+    user = db.Column(db.String)
+    
